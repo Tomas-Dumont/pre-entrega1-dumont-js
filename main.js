@@ -1,7 +1,6 @@
-let pesosArgentinos = 1;
-let dolar = 1305;
-let euro = 1391;
-let libraEsterlina = 1583;
+let pesosArgentinosDolar = 1300;
+let pesosArgentinosEuro = 1391;
+let pesosArgentinosLibra = 1583;
 
 function solicitarNombre() {
     let nombre = (prompt("Ingrese su nombre"));
@@ -9,21 +8,21 @@ function solicitarNombre() {
 }
 //Invocar función
 solicitarNombre();
-let cambio = prompt("Ingrese cantidad de Pesos Argentinos a intercambiar");
-let entrada = prompt("Ingresar moneda a intercambiar: \n1: Dólar \n2: Euro \n3: Libra Esterlina ");
+let entrada = prompt("Ingresar moneda a intercambiar: \nElegir numero: \n1: Dólar \n2: Euro \n3: Libra Esterlina ");
+let monedaCambio = prompt("Cantidad a intercambiar")
 
 let askAgain = true;
 
 do {
     switch (entrada) {
         case "1":
-            alert(cambio+ " peso/s " + "= " + cambio * dolar + " Dólares");
+            alert(monedaCambio+ " dólar/es " + "= " + monedaCambio * pesosArgentinosDolar + " Pesos Argentinos");
             break;
         case "2":
-            alert(cambio+ " peso/s " + "= " + cambio * dolar + " Euros");
+            alert(cambio+ " Euro/s " + "= " + cambio * pesosArgentinosEuro + " Pesos Argentinos");
             break;
         case "3":
-            alert(cambio+ " peso/s " + "= " + cambio * dolar + " Libras Esterlinas");
+            alert(cambio+ " Libra/s Esterlinas " + "= " + cambio * pesosArgentinosLibra + " Pesos Argentinos");
             break;
         default:
             alert("¡Dato Incorrecto!");
